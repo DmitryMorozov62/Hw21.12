@@ -119,7 +119,7 @@ public class Main {
         int many = 500;
         int maxDay = weightLossG / little;
         int minDay = weightLossG / many;
-        float midlDay = (maxDay + minDay) / 2f;
+        int midlDay = (maxDay + minDay) / 2;
         //результат задачи 7
         System.out.println(maxDay + " (день)дней");
         System.out.println(minDay + " (день)дней");
