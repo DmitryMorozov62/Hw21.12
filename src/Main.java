@@ -15,17 +15,17 @@ public class Main {
         // Пишем код для задачи 1
         byte a = 1;
         short b = 2;
-        int c = 3;
+        int r = 3;
         long d = 4L;
         float p = 3.14f;
         double w = 87.5;
         // Результат задачи 1
-        System.out.println("byte a" + " = " + a);
-        System.out.println("short b" + " = " + b);
-        System.out.println("int c" + " = " + c);
-        System.out.println("long d" + " = " + d);
-        System.out.println("float p" + " = " + p);
-        System.out.println("double w" + " = " + w);
+        System.out.println("Значение переменной a с типом byte равно " + a);
+        System.out.println("Значение переменной b с типом short равно " + b);
+        System.out.println("Значение переменной r с типом int равно " + r);
+        System.out.println("Значение переменной d с типом long равно " + d);
+        System.out.println("Значение переменной p с типом float равно " + p);
+        System.out.println("Значение переменной w с типом double равно " + w);
     }
     public static void task2 () {
         System.out.println("Задача 2");
@@ -60,12 +60,12 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
         //пишем код для задачи 4
+        byte minutes = 2;
         byte bottlesForTwoMinutes = 16;
-        byte oneMinutes = 1;
-        int bottlesForOneMinutes = bottlesForTwoMinutes / 2;
+        int bottlesForOneMinutes = bottlesForTwoMinutes / minutes;
         int twentyMinutes = 20;
         int bottlesForTwentyMinutes = bottlesForOneMinutes * twentyMinutes;
-        int day = oneMinutes * 1440;
+        int day = bottlesForOneMinutes * 1440;
         int bottlesForDay = bottlesForOneMinutes * day;
         int threeDays = 3 * day;
         int bottlesForThreeDays = bottlesForDay * threeDays;
@@ -96,14 +96,14 @@ public class Main {
         System.out.println("Задача 6");
         //пишем код для задачи 6
         int oneBanana = 80;
-        int fiveBananas = oneBanana * 5;
+        int fiveBananas = 5;
         int milk100 = 105;
-        int milk200 = milk100 * 2;
+        int milk200 = 2;
         int cream = 100;
-        int twoCream = cream * 2;
+        int twoCream = 2;
         int egg = 70;
-        int fourEggs = egg * 4;
-        int recipe = fiveBananas + milk200 + twoCream + fourEggs;
+        int fourEggs = 4;
+        int recipe = fiveBananas * oneBanana + milk200 * milk100 + twoCream * cream + fourEggs * egg;
         float recipeKg = recipe / 1000f;
         //результат задачи 6
         System.out.println(recipe + " г");
@@ -117,9 +117,9 @@ public class Main {
         int weightLossG = weightLoss * 1000;
         int little = 250;
         int many = 500;
-        int maxDay = weightLossG / little;
-        int minDay = weightLossG / many;
-        int midlDay = (maxDay + minDay) / 2;
+        double maxDay = (double)weightLossG / little;
+        double minDay = (double)weightLossG / many;
+        double midlDay = (maxDay + minDay) / 2d;
         //результат задачи 7
         System.out.println(maxDay + " (день)дней");
         System.out.println(minDay + " (день)дней");
@@ -134,18 +134,16 @@ public class Main {
         int maryForYear = maryForMonth * 12;
         int denisForYear = denisForMonth * 12;
         int kristiForYear = kristiForMonth * 12;
-        int mary1 = 67760 / 100;
-        int denis1 = 83690 / 100;
-        int kristi1 = 76230 / 100;
-        int upMary = maryForMonth + mary1 * 10;
-        int upDenis = denisForMonth + denis1 * 10;
-        int upKristi = kristiForMonth + kristi1 * 10;
-        int upMaryForYear = upMary * 12;
-        int upDenisForYear = upDenis * 12;
-        int upKristiForYear = upKristi * 12;
-        int differenceMary = upMaryForYear - maryForYear;
-        int differenceDenis = upDenisForYear - denisForYear;
-        int differenceKristi = upKristiForYear - kristiForYear;
+        float indexPercent = 1.1f;
+        float upMary = maryForMonth * indexPercent;
+        float upDenis = denisForMonth * indexPercent;
+        float upKristi = kristiForMonth * indexPercent;
+        float upMaryForYear = upMary * 12;
+        float upDenisForYear = upDenis * 12;
+        float upKristiForYear = upKristi * 12;
+        float differenceMary = upMaryForYear - maryForYear;
+        float differenceDenis = upDenisForYear - denisForYear;
+        float differenceKristi = upKristiForYear - kristiForYear;
         //результат задачи 8
         System.out.println("Маша теперь получает " + upMary + " рублей. Годовый доход вырос на " +
                            differenceMary + " рублей.");
