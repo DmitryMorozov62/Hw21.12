@@ -1,5 +1,157 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+        task8();
     }
+
+    public static void task1 () {
+        System.out.println("Задача 1");
+        // Пишем код для задачи 1
+        byte a = 1;
+        short b = 2;
+        int r = 3;
+        long d = 4L;
+        float p = 3.14f;
+        double w = 87.5;
+        // Результат задачи 1
+        System.out.println("Значение переменной a с типом byte равно " + a);
+        System.out.println("Значение переменной b с типом short равно " + b);
+        System.out.println("Значение переменной r с типом int равно " + r);
+        System.out.println("Значение переменной d с типом long равно " + d);
+        System.out.println("Значение переменной p с типом float равно " + p);
+        System.out.println("Значение переменной w с типом double равно " + w);
+    }
+    public static void task2 () {
+        System.out.println("Задача 2");
+        // Пишем код для задачи 2
+        byte first = 67;
+        short second = -159;
+        int third = 569;
+        long fourth = 987678965549L;
+        float fifth = 27.12f;
+        double sixth = 2.786;
+        // Результат задачи 2
+        //чтобы Idea не жаловалась вывел в консоль
+        System.out.println("byte first" + " = " + first);
+        System.out.println("short second" + " = " + second);
+        System.out.println("int third" + " = " + third);
+        System.out.println("long fourth" + " = " + fourth);
+        System.out.println("float fifth" + " = " + fifth);
+        System.out.println("double sixth" + " = " + sixth);
+    }
+    public static void task3 () {
+        System.out.println("Задача 3");
+        //Пишем код для задачи 3
+        int ludaP = 23;
+        int annaS = 27;
+        int katyA = 30;
+        int allStudent = ludaP + annaS + katyA;
+        int papers = 480;
+        int everyStudent = papers / allStudent;
+        // Результат задачи 3
+        System.out.println("На каждого ученика рассчитано " + everyStudent + " листов бумаги");
+    }
+    public static void task4 () {
+        System.out.println("Задача 4");
+        //пишем код для задачи 4
+        byte minutes = 2;
+        byte bottlesForTwoMinutes = 16;
+        int bottlesForOneMinutes = bottlesForTwoMinutes / minutes;
+        int twentyMinutes = 20;
+        int bottlesForTwentyMinutes = bottlesForOneMinutes * twentyMinutes;
+        int day = bottlesForOneMinutes * 1440;
+        int bottlesForDay = bottlesForOneMinutes * day;
+        int threeDays = 3 * day;
+        int bottlesForThreeDays = bottlesForDay * threeDays;
+        int month = day * 30;
+        long bottlesForMonth = bottlesForDay * 30L;
+        // результат задачи 4
+        System.out.println("За " + twentyMinutes + " машина произвела " + bottlesForTwentyMinutes + " штук бутылок");
+        System.out.println("За " + day + " машина произвела " + bottlesForDay + " штук бутылок");
+        System.out.println("За " + threeDays + " машина произвела " + bottlesForThreeDays + " штук бутылок");
+        System.out.println("За " + month + " машина произвела " + bottlesForMonth + " штук бутылок");
+    }
+
+    public static void task5 () {
+        System.out.println("Задача 5");
+        //пишем код для задачи 5
+        int allJars = 120;
+        int whitePaintForRoom = 2;
+        int brownPaintForRoom = 4;
+        int jarsForRoom = brownPaintForRoom + whitePaintForRoom;
+        int classRoom = allJars / jarsForRoom;
+        int whiteJars = classRoom * whitePaintForRoom;
+        int brownJars = classRoom * brownPaintForRoom;
+        //результат задачи 5
+        System.out.println("В школе, где " + classRoom + " классов, нужно " + whiteJars + " банок белой краски и "
+                          + brownJars + " банок коричневой краски");
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        //пишем код для задачи 6
+        int oneBanana = 80;
+        int fiveBananas = 5;
+        int milk100 = 105;
+        int milk200 = 2;
+        int cream = 100;
+        int twoCream = 2;
+        int egg = 70;
+        int fourEggs = 4;
+        int recipe = fiveBananas * oneBanana + milk200 * milk100 + twoCream * cream + fourEggs * egg;
+        float recipeKg = recipe / 1000f;
+        //результат задачи 6
+        System.out.println(recipe + " г");
+        System.out.println(recipeKg + " кг");
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        //пишем код для задачи 7
+        int weightLoss = 7;
+        int weightLossG = weightLoss * 1000;
+        int little = 250;
+        int many = 500;
+        double maxDay = (double)weightLossG / little;
+        double minDay = (double)weightLossG / many;
+        double midlDay = (maxDay + minDay) / 2d;
+        //результат задачи 7
+        System.out.println(maxDay + " (день)дней");
+        System.out.println(minDay + " (день)дней");
+        System.out.println("в среднем " + midlDay + " (день)дней");
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        //пишем код для задачи 8
+        int maryForMonth = 67760;
+        int denisForMonth = 83690;
+        int kristiForMonth = 76230;
+        int maryForYear = maryForMonth * 12;
+        int denisForYear = denisForMonth * 12;
+        int kristiForYear = kristiForMonth * 12;
+        float indexPercent = 1.1f;
+        float upMary = maryForMonth * indexPercent;
+        float upDenis = denisForMonth * indexPercent;
+        float upKristi = kristiForMonth * indexPercent;
+        float upMaryForYear = upMary * 12;
+        float upDenisForYear = upDenis * 12;
+        float upKristiForYear = upKristi * 12;
+        float differenceMary = upMaryForYear - maryForYear;
+        float differenceDenis = upDenisForYear - denisForYear;
+        float differenceKristi = upKristiForYear - kristiForYear;
+        //результат задачи 8
+        System.out.println("Маша теперь получает " + upMary + " рублей. Годовый доход вырос на " +
+                           differenceMary + " рублей.");
+        System.out.println("Денис теперь получает " + upDenis + " рублей. Годовой доход вырос на " +
+                           differenceDenis + " рублей.");
+        System.out.println("Кристина теперь получате " + upKristi + " рублейю Годовой доход вырос на " +
+                           differenceKristi + " рублей.");
+
+    }
+
 }
